@@ -1,0 +1,405 @@
+
+/* Golbal Variables */
+html {
+    scroll-padding-top: 68px;
+}
+
+/* Start Header Seaction */
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.mynavbar{
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.mynavbar .nav-item {
+    font-size: 14px;
+    margin-left: 5px;
+}
+.mynavbar .nav-item .nav-link {
+    position: relative;
+}
+.mynavbar .nav-item .nav-link::after{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: 0.4s;
+    
+}
+.mynavbar .nav-item .nav-link{
+    color: white !important;
+}
+
+.mynavbar .nav-link.active::after{
+    width: 100% !important;
+}
+.navbar .nav-link:hover::after{
+    width: 100%; 
+}
+
+header .hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+header .hero-content .social-icon {
+    margin-top: 30px;
+}
+header .hero-content .social-icon a {
+    text-decoration: none;
+    color: white;
+}
+header .hero-content .social-icon span {
+    display: inline-block;
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+/* End Header Seaction */
+
+/* Start About Section */
+#about .about-mg {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#about .about-mg::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#about .sub-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+#about p {
+    line-height: 1.7;
+    margin: 0;
+    font-size: 20px;
+    color: #748182;
+}
+#about p span {
+    font-weight: bold;
+}
+#about .mybtn:hover {
+    background-color: white;
+    color: #212529;
+    transition: .4s;
+}
+/* End About Section */
+
+/* Start Services Section */
+#services h2 {
+    position: relative;
+    z-index: 1;
+}
+#services h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    z-index: -1;
+}
+#services i {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all 0.5s;
+    transition: all 0.5s;
+}
+#services i:hover {
+    background: #212529;
+    color: white;
+}
+/* End Services Section */
+
+/* Start Portfolio Section */
+#portfolio h2 {
+    position: relative;
+    z-index: 1;
+}
+#portfolio h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    z-index: -1;
+}
+#portfolio .nav-link {
+    color: #222;
+    border-radius: 0;
+    padding: 0 5px;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+#portfolio .nav-link.active {
+    background-color: white;
+    border-bottom: 3px solid #222;
+}
+#portfolio .port-img {
+    position: relative;
+    overflow: hidden;
+}
+#portfolio .port-img .layer {
+    position: absolute;
+    width: 98%;
+    height: 98%;
+    top: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .8s ease;
+}
+
+#portfolio .port-img .layer .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    transition: .4s ease;
+}
+#portfolio .port-img .layer .icon a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .port-img:hover .layer {
+    opacity: 1;
+} 
+#portfolio .port-img .layer .icon:hover {
+    background-color: white;
+    border: 1px solid #111;
+    color: #111;
+}
+#portfolio .port-img .layer .icon:hover a i {
+    color: #111;
+}
+#portfolio .modal-header {
+    border-bottom: 0;
+}
+/* End Our Portfolio Section */
+
+/* Start Out testimonial Section*/
+#testimonial h2 {
+    position: relative;
+    z-index: 1;
+}
+
+#testimonial h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    z-index: -1;
+}
+#testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+}
+/* End Out testimonial Section*/
+
+/* Start Our Counter Section */
+.counter {
+    padding: 8rem 0;
+}
+
+.counter span {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+/* End Our Counter Section */
+
+/* Start Our Blog Section */
+#blog h2 {
+    position: relative;
+    z-index: 1;
+}
+#blog h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    z-index: -1;
+}
+.blog-layer{
+    position: absolute;
+    inset:5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transform: rotateY(180deg) scale(0);
+    transition: 1s;
+    
+}
+.blog-layer .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    transition: .4s ease;
+    margin-left: 3px;
+}
+.blog-layer .icon a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-card:hover .blog-layer{
+    opacity: 1;
+    transform: rotateY(0deg) scale(1);    
+}
+.blog-card .blog-layer .icon:hover {
+    background-color: white;
+    border: 1px solid #111;
+    color: #111;
+}
+.blog-card .blog-layer .icon:hover a i {
+    color: #111;
+}
+.blog-card img{
+transition: 0.6s;
+}
+.blog-card:hover  img{
+    transform: scale(1.2);
+}
+
+#blog .blog-card .blog-details {
+    background-color: rgba(52, 52, 52, .8);
+}
+/* End Our Blog Section */
+
+/* Start Our Contact Section */
+#contact h2 {
+    position: relative;
+    z-index: 1;
+}
+#contact h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    z-index: -1;
+}
+#contact .counter-item .counter-icon {
+    width: 70px;
+    height: 70px;
+    margin: 11px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    transition: .7s ease;
+}
+#contact .counter-item .counter-icon:hover {
+    background-color: #1c1c1c;;
+}
+#contact .counter-item .counter-icon:hover i {
+    color: white;
+}
+#contact .counter-item span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#contact .form-control {
+    border: 1px solid #ddd;
+    outline: none;
+}
+#contact .form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ddd !important;
+}
+.form-btn{
+    width: fit-content;
+    background-color: #1c1c1c;
+    color: white;
+    transition: .7s ease;
+    float: left;
+}
+.form-btn.btn:hover {
+   
+    background-color: white;
+    color: black;
+    border: 1px solid black;   
+}
+/* End Our Contact Section */
+
+/* Start Our Footer Section */
+footer {
+    background-color: #111;
+}
+/* End Our Footer Section */
